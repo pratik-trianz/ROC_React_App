@@ -72,10 +72,11 @@ return(error.length === 0 ? '' : 'has-error');
             <div className = "form-group">
             <label for = "product">Product</label>
              <select className = "form-control">
-              <option value="">Residential Fix And Flip Portfolio Lending Program</option>
-          <option value="">Residential Fix And Flip Portfolio Lending Program</option>
-        <option value="">Residential Fix And Flip Portfolio Lending Program</option>
-        <option value="">Residential Fix And Flip Portfolio Lending Program</option>
+               <option value="">Residential Fix And Flip Portfolio Lending Program</option>
+           <option value="">Residential Fix And Flip High Loan to Value Program</option>
+         <option value="">Residential Fix And Flip Transparent Processing Program</option>
+         <option value="">Residential Fix And Flip Single Scrip Service Program</option>
+
        </select>
             </div>
 
@@ -108,9 +109,6 @@ return(error.length === 0 ? '' : 'has-error');
             <label for="maximumterm">If my loan is approved, I would like</label>
              <select className = "form-control">
               <option value="">my documents ELECTRONICALLY delivered to me</option>
-          <option value="">my documents ELECTRONICALLY delivered to me</option>
-        <option value="">my documents ELECTRONICALLY delivered to me</option>
-        <option value="">my documents ELECTRONICALLY delivered to me</option>
        </select>
             </div>
 
