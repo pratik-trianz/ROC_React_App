@@ -1,0 +1,38 @@
+/*Loan form css*/
+.apply-loan{}
+.apply-loan h1{color: #3c3c3c;}
+.apply-loan p{color: #aaaaaa; font-size: 18px;}
+.loan-details{background-color: #fff; padding: 30px 30px;}
+.details{float: left; width: 100%; margin-bottom: 30px;}
+.details h3{color: #142b54; float: left; width: auto; background-color: #fff; padding: 0px 20px 0px 0px; position: relative; z-index: 1;}
+.details hr{margin: 0px; position: relative; top: -25px; float: left; width: 100%; z-index: 0; border-width: 2px 0px 0px;}
+.goto{background-color: #15549a !important; float: right; margin-top: 30px; font-size: 18px !important; border-radius: 15px !important; padding: 15px 30px !important;}
+.layer{padding: 0 15%; margin-top: 30px;}
+.layer .text-one{background-color: #142b54; color: #fff; border-radius: 50%; padding: 12px 15px; position: relative; top: 10px;}
+.layer hr{margin: 0px; border-color: #aaaaaa;}
+.layer .text-two{float: right; color: #fff; border-radius: 50%; padding: 12px 17px; position: relative; top: -24px; background-color: #c8cdd5;}
+.personal-loan{float: left; width: 100%;}
+.layer1{padding: 0 15%; margin-top: 30px;}
+.layer1 .text-one{background-color: #c8cdd5; color: #fff; border-radius: 50%; padding: 12px 15px; position: relative; top: 10px;}
+.layer1 hr{margin: 0px; border-color: #aaaaaa;}
+.layer1 .text-two{float: right; color: #fff; border-radius: 50%; padding: 12px 17px; position: relative; top: -24px; background-color: #142b54;}
+
+.address-employment{float: left; width: 100%;}
+#submit-application{}
+label{color: #aaaaaa;}
+
+.custom-modal .modal-content .modal-body{padding: 30px 10px 46px; text-align: center;}
+.close{opacity: 1 !important;}
+.modal-body h4{color: #aaaaaa !important;}
+.custom-btn{
+    background: #3f75cc none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin: 26px 5px 5px 0;
+    padding: 8px 49px;
+}
+.apply-forms{background-color: #f0f0f0; padding: 40px 0 20px;margin-bottom: 100px}
