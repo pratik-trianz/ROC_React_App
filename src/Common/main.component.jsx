@@ -18,7 +18,7 @@ class Main extends Component {
                         <li className="lenderslink"><Link to="/lendor" activeClassName="menu-active">LENDERS</Link></li>
                         <li className="investorslink"><Link to="/investor" activeClassName="menu-active">INVESTORS</Link></li>
                         <li className="borrowlink"><Link to="/borrower" activeClassName="menu-active">BORROWERS</Link></li>
-                        <li className="technologylink"><Link to="/technology" activeClassName="menu-active">TECHNOLOGY</Link></li>
+                        <li className="technologylink"><Link to="/trade" activeClassName="menu-active">TRADE</Link></li>
                         <li><a href="#"><i className="fa fa-search" aria-hidden="true"></i></a></li>
                     </ul>
                 </nav>

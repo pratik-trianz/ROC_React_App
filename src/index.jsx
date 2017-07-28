@@ -10,6 +10,7 @@ import Borrower from './common/borrower.component.jsx';
 import Loancalc from './common/loancalc.component.jsx';
 import PersonalDetails from './common/personaldetails.component.jsx';
 import AddressDetails from './common/addressdetails.component.jsx';
+import Trade from './common/trade.component.jsx'
 
 
 render(
@@ -21,6 +22,7 @@ render(
             <Route path="/Loancalc" component={Loancalc}/>
             <Route path="/personaldetails" component={PersonalDetails}/>
             <Route path="/addressdetails" component={AddressDetails}/>
+            <Route path="/trade" component={Trade}/>
         </Route>
     </Router>,
     document.getElementById('container')

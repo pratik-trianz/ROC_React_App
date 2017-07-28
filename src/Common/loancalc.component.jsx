@@ -56,8 +56,8 @@ class Loancalc extends Component {
                           </div>
                     </div>
                     <div className="col-md-4">
-                            <div className="padding0">
-                                <div className="donutChartContainer">
+                        <div className="padding0">
+                            <div className="donutChartContainer">
                                   <DonutChart
                                         data={[{
                                             label: 'Principal',
@@ -67,11 +67,9 @@ class Loancalc extends Component {
                                             label: 'Interest',
                                             value: interestValue
                                         }]} colors={["#56be47","#253d63"]} width={610} height={500} legend={true}/>
-                                </div>
-                                <div className="text-center">
-
-                               </div>
-                             </div>
+                            </div>
+                            <div className="text-center"></div>
+                        </div>
                    </div>
                   </div>
                 </div>
