@@ -75,8 +75,8 @@ class Trade extends Component {
     for (let i = 1; i < 1000; i++) {
       rows.push({
         id: i,
-        borrowerName: 'Anonymous ' + i,
-        draws: Math.min(100, Math.round(Math.random() * 110)),
+        borrowerName: 'Anonymous' + i,
+        draws: Math.min(5, Math.round(Math.random() * 110)),
         amount: '$' + Math.round(100000 + Math.random() * 100) / 100 ,
         renoBudget: '$' + Math.round(100000 + Math.random() * 100) / 100,
         term: 2 + i + 'Years',
@@ -131,6 +131,7 @@ class Trade extends Component {
   render(){
     const { _columns } = this.state
     return (
+      <div className="container">
         <ReactDataGrid
           columns={_columns}
           rowGetter={this.rowGetter}
@@ -141,7 +142,8 @@ class Trade extends Component {
           toolbar={<Toolbar enableFilter={true}/>}
           enableRowSelect={true}
           onAddFilter={this.handleFilterChange}
-          onClearFilters={this.onClearFilters} />);
+          onClearFilters={this.onClearFilters} />
+      </div>);
     }
   }
 

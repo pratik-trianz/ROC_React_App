@@ -34689,8 +34689,8 @@
 	      for (var i = 1; i < 1000; i++) {
 	        rows.push({
 	          id: i,
-	          borrowerName: 'Anonymous ' + i,
-	          draws: Math.min(100, Math.round(Math.random() * 110)),
+	          borrowerName: 'Anonymous' + i,
+	          draws: Math.min(5, Math.round(Math.random() * 110)),
 	          amount: '$' + Math.round(100000 + Math.random() * 100) / 100,
 	          renoBudget: '$' + Math.round(100000 + Math.random() * 100) / 100,
 	          term: 2 + i + 'Years',
@@ -34804,17 +34804,21 @@
 	    value: function render() {
 	      var _columns = this.state._columns;
 
-	      return _react2.default.createElement(_reactDataGrid2.default, {
-	        columns: _columns,
-	        rowGetter: this.rowGetter,
-	        enableCellSelect: true,
-	        onGridSort: this.handleGridSort,
-	        rowsCount: this.getSize(),
-	        minHeight: 500,
-	        toolbar: _react2.default.createElement(Toolbar, { enableFilter: true }),
-	        enableRowSelect: true,
-	        onAddFilter: this.handleFilterChange,
-	        onClearFilters: this.onClearFilters });
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'container' },
+	        _react2.default.createElement(_reactDataGrid2.default, {
+	          columns: _columns,
+	          rowGetter: this.rowGetter,
+	          enableCellSelect: true,
+	          onGridSort: this.handleGridSort,
+	          rowsCount: this.getSize(),
+	          minHeight: 500,
+	          toolbar: _react2.default.createElement(Toolbar, { enableFilter: true }),
+	          enableRowSelect: true,
+	          onAddFilter: this.handleFilterChange,
+	          onClearFilters: this.onClearFilters })
+	      );
 	    }
 	  }]);
 
