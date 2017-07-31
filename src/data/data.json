@@ -1,0 +1,62 @@
+
+[{
+	"amount": "$1000.59",
+	"borrowerName": "Anonymous1",
+	"draws": 5,
+	"id": 1,
+	"interest": "2%",
+	"notes": " ",
+	"renoBudget": "$1000.19",
+	"ruleMatch": "12/12",
+	"term": "3Years"
+}, {
+	"amount": "$1000.59",
+	"borrowerName": "Anonymous1",
+	"draws": 5,
+	"id": 1,
+	"interest": "2%",
+	"notes": " ",
+	"renoBudget": "$1000.19",
+	"ruleMatch": "12/12",
+	"term": "3Years"
+}, {
+	"amount": "$1000.59",
+	"borrowerName": "Anonymous1",
+	"draws": 5,
+	"id": 1,
+	"interest": "2%",
+	"notes": " ",
+	"renoBudget": "$1000.19",
+	"ruleMatch": "12/12",
+	"term": "3Years"
+}, {
+	"amount": "$1000.59",
+	"borrowerName": "Anonymous1",
+	"draws": 5,
+	"id": 1,
+	"interest": "2%",
+	"notes": " ",
+	"renoBudget": "$1000.19",
+	"ruleMatch": "12/12",
+	"term": "3Years"
+}, {
+	"amount": "$1000.59",
+	"borrowerName": "Anonymous1",
+	"draws": 5,
+	"id": 1,
+	"interest": "2%",
+	"notes": " ",
+	"renoBudget": "$1000.19",
+	"ruleMatch": "12/12",
+	"term": "3Years"
+}, {
+	"amount": "$1000.59",
+	"borrowerName": "Anonymous1",
+	"draws": 5,
+	"id": 1,
+	"interest": "2%",
+	"notes": " ",
+	"renoBudget": "$1000.19",
+	"ruleMatch": "12/12",
+	"term": "3Years"
+}]

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDataGrid from 'react-data-grid';
+import axios from 'axios';
 //import { Toolbar, Selectors } from 'react-data-grid-addons';
 const { Toolbar, Data: { Selectors } } = require('react-data-grid-addons');
 
@@ -71,27 +72,36 @@ class Trade extends Component {
     return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime())).toLocaleDateString();
   }
   createRows = () => {
-    let rows = [];
-    for (let i = 1; i < 1000; i++) {
-      rows.push({
-        id: i,
-        borrowerName: 'Anonymous' + i,
-        draws: Math.min(5, Math.round(Math.random() * 110)),
-        amount: '$' + Math.round(100000 + Math.random() * 100) / 100 ,
-        renoBudget: '$' + Math.round(100000 + Math.random() * 100) / 100,
-        term: 2 + i + 'Years',
-        interest: 1 + i + '%',
-        notes: ' ',
-        ruleMatch: '12/12'
-      });
-    }
-
-    return rows;
+    // let rows = [];
+    axios
+     .get('data.json')
+     .then(({ data })=> {
+       this.setState({
+         rows: data
+       });
+     })
+     .catch((err)=> {console.log(err);})
+    // for (let i = 1; i < 1000; i++) {
+    //   rows.push({
+    //     id: i,
+    //     borrowerName: 'Anonymous' + i,
+    //     draws: Math.min(5, Math.round(Math.random() * 110)),
+    //     amount: '$' + Math.round(100000 + Math.random() * 100) / 100 ,
+    //     renoBudget: '$' + Math.round(100000 + Math.random() * 100) / 100,
+    //     term: 2 + i + 'Years',
+    //     interest: 1 + i + '%',
+    //     notes: ' ',
+    //     ruleMatch: '12/12'
+    //   });
+    // }
+    //
+    // return rows;
   }
   getRows = () => {
      return Selectors.getRows(this.state);
    }
   getSize = () => {
+    console.log(this.getRows());
     return this.getRows().length;
   }
   rowGetter = (rowIdx) => {
@@ -132,6 +142,8 @@ class Trade extends Component {
     const { _columns } = this.state
     return (
       <div className="container">
+        <h3>LOANS AVAILABLE TO BUY</h3>
+        <br/>
         <ReactDataGrid
           columns={_columns}
           rowGetter={this.rowGetter}
